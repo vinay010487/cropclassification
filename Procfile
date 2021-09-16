@@ -1,1 +1,1 @@
-Web:gunicorn main:app
+gunicorn -b :5000 --access-logfile - --error-logfile - main:app
